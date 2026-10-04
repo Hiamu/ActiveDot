@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>ActiveDot</AssemblyName>
+    <RootNamespace>ActiveDot</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <ApplicationIcon>ActiveDot.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Product>ActiveDot</Product>
+    <Description>帧心跳 - 强制远程软件保持高帧率传输</Description>
+    <!-- 兼容旧式 LaunchSettings 不需要 -->
+  </PropertyGroup>
+
+  <!-- 图标随输出复制一份到 exe 同目录，供托盘/设置窗口加载（支持替换） -->
+  <ItemGroup>
+    <Content Include="ActiveDot.ico" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

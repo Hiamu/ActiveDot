@@ -1,0 +1,18 @@
+<Window x:Class="ActiveDot.HeartbeatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ActiveDot"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        ShowInTaskbar="False"
+        Topmost="True"
+        Focusable="False"
+        ShowActivated="False"
+        Background="Transparent">
+    <Grid x:Name="RootGrid">
+        <Border x:Name="HeartFill"
+                Background="Transparent"
+                BorderThickness="0"/>
+    </Grid>
+</Window>
